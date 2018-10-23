@@ -1,8 +1,8 @@
 {
-  "name": "Adhoc Portfolio",
-  "homepage": "https://github.com/developertenzin/adhoc-portfolio",
+  "name": "Rovio Portfolio",
+  "homepage": "https://github.com/rcvioleta/rcvioleta.github.io",
   "authors": [
-    "developertenzin <tenzinphuljung7@gmail.com>"
+    "Rovio <rcvioleta13@gmail.com>"
   ],
   "description": "This is a portfolio built just for Chicago Digital ;)",
   "main": "app.js",
