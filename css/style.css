@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+:root {
+    --white: #fff;
+    --dark-grey: #ccc;
+    --light-grey: #eee;
+    --black: #303030;
+    --primary: #6c5ce7;
+    --secondary: #7c73fa;
+    --dark-transparent: rgba(0, 0, 0, 0.5);
+    --white-transparent: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p, span, a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.header-bg {
+    background: url('../images/coding.jpg') center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    opacity: .5;
+    z-index: -1;
+}
+
+#main-header {
+    height: 90vh;
+}
+
+#main-header .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+#main-header .top-nav .flexbox {
+    width: 80%;
+    margin: 1.5rem auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+#main-header .top-nav .flexbox ul > li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+#main-header .top-nav .flexbox ul > li > a {
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+#main-header .top-nav .flexbox ul > li .get-in-touch {
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: .2rem;
+}
+
+
+#main-header .content {
+    position: absolute;
+    top: 35%;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid orange; */
+}
+
+#main-header .content p {
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-size: 1.1em;
+}
+
+#main-header .content .buttons {
+    margin-top: 3rem;
+    display: block;
+}
+
+#main-header .content .buttons > a {
+    padding: 1rem 1.2rem;
+    border-radius: .2rem;
+    border: none;
+    font-size: 1.1em;
+    font-family: 'Questrial', sans-serif;
+    color: var(--white);
+}
+
+#main-header .content > .buttons a > .fa-chevron-right {
+    margin-left: .5rem;
+}
+
+#main-header .content > .buttons a:first-of-type {
+    margin-right: 1rem;
+    background-color: #6c5ce7;
+}
+
+#main-header .content .buttons > a:last-of-type {
+    background: var(--dark-transparent);
+}
+
+#main-header .top-nav .flexbox ul > li .get-in-touch:hover,
+#main-header .content .buttons > a:first-of-type:hover {
+    background-color: var(--secondary);
+}
+
+#main-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main-content .experience hr {
+    margin-top: 7rem;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#main-content .experience .flexbox {
+    margin-top: 10%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#main-content .experience .flexbox > div {
+    /* border: 3px solid orange; */
+    width: 50%;
+}
+
+#main-content .experience .flexbox .image img {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+#main-content .experience .flexbox p {
+    margin: 2rem auto;
+    color: var(--black);
+}
+
+#main-content .experience .flexbox ul > li {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+
+#main-content .experience .flexbox ul > li:first-of-type {
+    margin-right: .5rem;
+}
