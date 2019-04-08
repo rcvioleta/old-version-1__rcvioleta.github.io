@@ -50,13 +50,16 @@
 
         <main id="main-content">
             <div class="work">
-                <h1>Where do I work?</h1>
-                <h2>Currently, I am working as a Web Developer in FLATWORD SOLUTIONS PH</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellendus, asperiores fugit
-                    ipsa dolore iste non reiciendis? Repellendus temporibus, eveniet unde possimus, fugiat asperiores
-                    commodi facilis recusandae excepturi, voluptatibus repellat? Sed in, officiis ducimus eveniet est
-                    similique, iusto numquam nesciunt asperiores, alias excepturi necessitatibus voluptatum eos aperiam
-                    saepe facilis corporis?</p>
+                <h1><q>WORK / EXPERIENCE</q></h1>
+                <p>I am currently working as a <span class="custom-text">web developer</span> in flatworld solutions. My
+                    expertise includes creating responsive and robust websites. I am proficient with <span
+                        class="custom-text">vue
+                        js</span> and <span class="custom-text">react js</span> as well, but my skills are not limited
+                    to
+                    front-end technologies. I indeed have a competitive experience with back-end technologies such as
+                    <span class="custom-text">php, mysql, javascript</span> and <span class="custom-text">node js</span>
+                    on
+                    the back-end.</p>
             </div>
 
             <div class="experience">
@@ -106,6 +109,30 @@
 
         <footer id="footer"></footer>
     </div>
+
+    <script>
+        const mainHeader = document.querySelectorAll('#main-header');
+        const topNav = mainHeader[0].firstElementChild;
+
+        window.onscroll = function () {
+            if (this.scrollY >= 10 && this.scrollY < 555) {
+                topNav.style.visibility = 'hidden';
+                topNav.style.opacity = '0';
+            } else if (this.scrollY >= 555) {
+                topNav.style.visibility = 'visible';
+                topNav.style.opacity = '1';
+                topNav.style.backgroundColor = '#fff';
+                topNav.style.color = '#000';
+                topNav.style.borderBottom = '2px solid gray';
+            } else {
+                topNav.style.visibility = 'visible';
+                topNav.style.opacity = '1';
+                topNav.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+                topNav.style.color = '#000';
+                topNav.style.borderBottom = '0';
+            }
+        }
+    </script>
 </body>
 
 </html>
