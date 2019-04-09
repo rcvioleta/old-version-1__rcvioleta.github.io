@@ -328,10 +328,25 @@ a {
     #main-header .top-nav .flexbox .navigation .hamburger {
         display: block;
     }
+
+    #main-content .experience .flexbox {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #main-content .experience .flexbox > div {
+        flex-basis: 100%;
+        /* border: 3px solid orange; */
+    }
+
+    #main-content .experience .flexbox .description {
+        margin-top: 2rem;
+    }
 }
 
 /* 600 - 900px tablet portrait */
 @media (max-width: 56.25em) {
+
 }
 
 /* 0 - 600px phone */
