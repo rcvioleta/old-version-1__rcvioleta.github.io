@@ -78,6 +78,10 @@ a {
     font-family: 'Questrial', sans-serif;
 }
 
+#main-header .top-nav .flexbox > div {
+    /* border: 3px solid orange; */
+}
+
 #main-header .top-nav .flexbox ul > li {
     display: inline-block;
     margin: 0 1rem;
@@ -94,6 +98,35 @@ a {
     background-color: var(--primary);
     padding: 1rem;
     border-radius: .2rem;
+}
+
+#main-header .top-nav .flexbox .navigation .hamburger {
+    content: '';
+    position: absolute;
+    top: 48.5%;
+    right: 10.2%;
+    height: 5px;
+    width: 3rem;
+    background-color: var(--primary);
+    display: none;
+}
+
+#main-header .top-nav .flexbox .navigation .hamburger:before {
+    content: '';
+    position: absolute;
+    top: .7rem;
+    height: 5px;
+    width: 3rem;
+    background-color: var(--primary);
+}
+
+#main-header .top-nav .flexbox .navigation .hamburger:after {
+    content: '';
+    position: absolute;
+    bottom: .7rem;
+    height: 5px;
+    width: 3rem;
+    background-color: var(--primary);
 }
 
 
@@ -284,4 +317,39 @@ a {
 
 #footer p {
     margin-bottom: 2rem;
+}
+
+/* 900 - 1200px tablet landscape */
+@media (max-width: 75em) {
+    #main-header .top-nav .flexbox ul  {
+        display: none;
+    }
+
+    #main-header .top-nav .flexbox .navigation .hamburger {
+        display: block;
+    }
+}
+
+/* 600 - 900px tablet portrait */
+@media (max-width: 56.25em) {
+}
+
+/* 0 - 600px phone */
+@media (max-width: 37.5em) {
+    #main-header .top-nav .flexbox .brand h1 {
+        font-size: 1.5em;
+    }
+
+    #main-header .top-nav .flexbox .brand h3 {
+        font-size: 1em;
+    }
+
+    #main-header .content .buttons > a {
+        padding: .5rem;
+        border-radius: .2rem;
+        border: none;
+        font-size: 1em;
+        font-family: 'Questrial', sans-serif;
+        color: var(--white);
+    }
 }
