@@ -360,7 +360,7 @@ a {
     }
 
     #main-header .content {
-        top: 40%;
+        top: 45%;
         width: 90%;
     }
 
@@ -373,10 +373,10 @@ a {
     }
 
     #main-header .content .buttons > a {
-        padding: 1rem;
+        padding: .7rem;
         border-radius: .2rem;
         border: none;
-        font-size: 1em;
+        font-size: .8em;
         font-family: 'Questrial', sans-serif;
         color: var(--white);
     }
