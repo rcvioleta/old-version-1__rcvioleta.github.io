@@ -347,6 +347,10 @@ a {
 
 /* 0 - 600px phone */
 @media (max-width: 37.5em) {
+    .header-bg {
+        height: 75vh;
+    }
+
     #main-header .top-nav .flexbox {
         width: 90%;
     }
@@ -360,7 +364,7 @@ a {
     }
 
     #main-header .content {
-        top: 45%;
+        top: 43%;
         width: 90%;
     }
 
