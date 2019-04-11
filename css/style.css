@@ -348,7 +348,7 @@ a {
 /* 0 - 600px phone */
 @media (max-width: 37.5em) {
     .header-bg {
-        height: 75vh;
+        height: 80vh;
     }
 
     #main-header .top-nav .flexbox {
@@ -369,7 +369,7 @@ a {
     }
 
     #main-header .content h1 {
-        font-size: 1.45em;
+        font-size: 1.3em;
     }
 
     #main-header .content p {
@@ -377,7 +377,7 @@ a {
     }
 
     #main-header .content .buttons > a {
-        padding: .7rem;
+        padding: .6rem;
         border-radius: .2rem;
         border: none;
         font-size: .8em;
@@ -386,6 +386,7 @@ a {
     }
 
     #main-content .work h1 {
+        margin-top: 2rem;
         font-size: 1.8em;
     }
 
