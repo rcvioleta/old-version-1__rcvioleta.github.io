@@ -253,6 +253,7 @@ a {
     background-color: var(--primary);
     text-align: center;
     color: var(--light-grey);
+    z-index: -1;
 }
 
 
@@ -295,7 +296,6 @@ a {
     color: var(--white);
 
 }
-
 
 #footer .flexbox .box-2 {
     text-align: left;
@@ -352,19 +352,73 @@ a {
 /* 0 - 600px phone */
 @media (max-width: 37.5em) {
     #main-header .top-nav .flexbox .brand h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     #main-header .top-nav .flexbox .brand h3 {
+        font-size: .7em;
+    }
+
+    #main-header .content {
+        top: 40%;
+        width: 90%;
+    }
+
+    #main-header .content h1 {
+        font-size: 1.45em;
+    }
+
+    #main-header .content p {
         font-size: 1em;
     }
 
     #main-header .content .buttons > a {
-        padding: .5rem;
+        padding: 1rem;
         border-radius: .2rem;
         border: none;
         font-size: 1em;
         font-family: 'Questrial', sans-serif;
         color: var(--white);
+    }
+
+    #main-content .work h1 {
+        font-size: 1.8em;
+    }
+
+    #main-content .work p {
+        font-size: 1em;
+    }
+
+    #main-content .experience .flexbox .image img {
+        width: 100%;
+    }
+
+    #main-content .experience hr {
+        margin-top: 1.5rem;
+    }
+
+    #footer .flexbox {
+        flex-wrap: wrap;
+    }
+
+    #footer .flexbox > div {
+        flex-basis: 100%;
+    }
+
+    #footer .flexbox .box-2 {
+        margin: 2rem 0;
+    }
+
+    #footer .flexbox .box-1.flexbox .icon {
+        margin-left: 0;
+    }
+
+    #footer .flexbox .box-1.flexbox .description {
+        flex-basis: 72%;
+        font-size: 1em;
+    }
+
+    #footer .flexbox .box-1.flexbox .description .bold-text {
+        font-size: 1em;
     }
 }
