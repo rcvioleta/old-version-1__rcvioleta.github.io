@@ -128,8 +128,9 @@ a {
 
 #main-header .content {
     position: absolute;
-    top: 35%;
+    top: 40%;
     width: 80%;
+    height: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* border: 2px solid orange; */
@@ -315,6 +316,7 @@ a {
     margin-bottom: 2rem;
 }
 
+
 /* 900 - 1200px tablet landscape */
 @media (max-width: 75em) {
     #main-header .top-nav .flexbox ul  {
@@ -347,8 +349,9 @@ a {
 
 /* 0 - 600px phone */
 @media (max-width: 37.5em) {
+    #main-header,
     .header-bg {
-        height: 80vh;
+        height: 60vh;
     }
 
     #main-header .top-nav .flexbox {
@@ -364,7 +367,7 @@ a {
     }
 
     #main-header .content {
-        top: 45%;
+        top: 30%;
         width: 90%;
     }
 
